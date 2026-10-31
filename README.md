@@ -1,49 +1,36 @@
 # ORIS for Windows
 
-ORIS is an offline study timer, planner and study diary for Windows 10/11 x64.
+**[Get the latest approved ORIS Beta for Windows](https://github.com/oceanokeeffe-coder/oris-releases/releases/latest)**
 
-**No public installer has been published yet. Downloads are awaiting owner approval.**
+Open the release page and download **ORIS-Setup.exe** from **Assets**. Its version
+appears in the release title and release notes. Open the installer, then launch
+**ORIS Beta** from Start and create or open a local profile.
 
-The permanent release-page address will be:
-https://github.com/oceanokeeffe-coder/oris-releases/releases/latest
+[Direct Windows installer](https://github.com/oceanokeeffe-coder/oris-releases/releases/latest/download/ORIS-Setup.exe)
 
-This address does not provide a download until the first approved release is published.
-Do not send it as a live download invitation yet.
+Windows 10/11 x64. No Codex, development tools, ChatGPT account or subscription is
+needed. A free Microsoft WebView2 runtime may be downloaded during installation
+if Windows needs it. ORIS then works offline, with study data stored on your computer.
 
-## Installing an approved release
+## Updating
 
-1. Open the release-page address above after publication.
-2. Download **ORIS-Setup.exe** from Assets. Its version appears in the release title and notes.
-3. Open the installer, then launch **ORIS Beta** from Start.
-4. Create a local profile or open your existing one and start studying.
+Export a complete profile backup from **Settings → Data & Backups** before major
+upgrades. Finish your timer, quit ORIS through its tray and install the newer
+approved version under the same Windows account. Keep application data; profiles
+and study history should be preserved.
 
-The fixed installer asset address, once published, will be:
-https://github.com/oceanokeeffe-coder/oris-releases/releases/latest/download/ORIS-Setup.exe
-
-No Codex, Node.js, Rust, ChatGPT account or subscription is required. A free
-Microsoft WebView2 runtime may be downloaded by the installer if Windows needs it.
-ORIS then works offline.
-
-## Existing users
-
-Export a complete profile backup from **Settings → Data & Backups** before a major
-upgrade. Finish your study session and quit ORIS through its tray before installing
-the newer approved version. Use the same Windows account and keep application data.
-Your local profiles, projects, notes and study history should remain available.
-
-ORIS 0.1.0 cannot update itself: it needs a manual installer upgrade. Newer builds
-prepare **Settings → About ORIS → Check for Updates**. The public update service
-has not yet been activated or tested. Automatic checks default off; installation
-always needs your approval and must not interrupt running or paused study sessions.
-Until public update testing is complete, use the approved manual installer.
+ORIS 0.1.0 cannot update itself and needs a manual installer upgrade. Newer builds
+prepare in-app update controls, but the public updater still needs end-to-end
+verification. Use manual installers until that testing is confirmed. Automatic
+update checks default off, and installation always requires your approval.
 
 ## Windows security warnings
 
-The installer is not signed with Windows Authenticode. Windows may show an Unknown
-publisher or SmartScreen warning. Verify the release source and SHA-256 checksum
-before deciding whether to install. Do not disable Windows protections. Tauri's
-separate cryptographic updater signatures do not provide a Windows publisher certificate.
+The installer does not have a Windows Authenticode publisher certificate. Windows
+may show an Unknown publisher or SmartScreen warning. Verify this release and its
+SHA256SUMS.txt before deciding whether to install. Do not disable Windows security.
+Tauri's separate updater signatures do not remove publisher/reputation warnings.
 
-This is a releases-only repository. Application source, development files and user
-data are maintained separately. GitHub's automatic source archives contain only
-this repository's download documentation.
+This repository contains download documentation and release assets only. The
+application source and all personal data remain separate. Automatic source archives
+contain this download repository's documentation, not the ORIS application source.
